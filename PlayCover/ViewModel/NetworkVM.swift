@@ -67,7 +67,7 @@ class NetworkVM {
         }
 
         let semaphore = DispatchSemaphore(value: 0)
-        let validStatusCodes = [200, 301, 302, 303, 307, 308]
+        let validStatusCodes = [200, 301, 302, 303, 307, 308, 400, 403, 405]
 
         var available = false
         var finalURL: URL?
